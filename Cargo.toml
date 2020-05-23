@@ -1,0 +1,15 @@
+[package]
+name = "tokio-postponable-delay"
+version = "0.1.0"
+authors = ["Pierre Avital <pierre.avital@me.com>"]
+edition = "2018"
+license = "MPL-2.0"
+keywords = ["tokio", "delay"]
+readme = "README.md"
+description = "A tokio Delay that can be pushed back without instantiating new delays"
+repository = "https://github.com/p-avital/tokio-postponable-delay"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = {version="0.2", features=["time", "macros", "rt-threaded"]}
